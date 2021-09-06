@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+  <title>HTML/CSS</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <a href="#" class="logo">Travel</a>
+    <nav class="group">
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul class="group__navigation">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <ul class="group__action">
+        <li class="group__action--user">
+          <a href="#">Do Anh Tuan</a>
+          <div class="action__user--list">
+            <ul>
+              <li><a href=""><i class="fas fa-user-circle"></i><span>Trang cá nhân</span></a></li>
+              <li><a href=""><i class="fas fa-bell"></i><span>Thông báo</span></a></li>
+              <li><a href=""><i class="fas fa-cog"></i><span>Cài đặt</span></a></li>
+              <li><a href=""><i class="fas fa-sign-out-alt"></i><span>Đăng xuất</span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-search"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- banner -->
+  <div class="banner">
+    <div class="banner__bg">
+      <img src="./img/bg.jpg" alt="banner" class="banner__bg--img" />
+      <div class="banner__content">
+        <h2>Explore The World</h2>
+        <a href="#" class="banner__content--btn">Book Now</a>
+      </div>
+    </div>
+    <!-- form search -->
+    <form class="searchBox">
+      <div class="searchBox__inputBox">
+        <label for="location">Enter location</label>
+        <input type="text" id="location" placeholder="EX: VietNam" />
+      </div>
+      <div class="searchBox__inputBox">
+        <label>Check in</label>
+        <input type="date" />
+      </div>
+      <div class="searchBox__inputBox">
+        <label>Check out</label>
+        <input type="date" />
+      </div>
+      <div class="searchBox__inputBox">
+        <label class="white">-</label>
+        <input type="submit" value="Find" />
+      </div>
+    </form>
+  </div>
+  <!-- suggest -->
+  <section>
+    <div class="suggest">
+      <div class="suggest__location">
+        <img src="./img/Island__meeru.jpg" alt="Island__meeru" />
+        <h4>Island in Meeru</h4>
+      </div>
+      <div class="suggest__location">
+        <img src="./img/sea__danang.jpg" alt="sea__danang" />
+        <h4>Sea in danang</h4>
+      </div>
+      <div class="suggest__location">
+        <img src="./img/sea__indonesia.jpg" alt="sea__indonesia" />
+        <h4>Sea in indonesia</h4>
+      </div>
+    </div>
+    <div class="chart">
+      <div class="chart__title">Future <span>places</span> where many<br /> people will go in <span>2025</span> </div>
+      <div class="chart-popular">
+        <div class="chart-popular__list">
+          <div class="chart-popular__list--item" style="--percent: 10%">10%</div>
+          <p>Da Nang</p>
+        </div>
+        <div class="chart-popular__list">
+          <div class="chart-popular__list--item" style="--percent: 90%">90%</div>
+          <p>Da Nang</p>
+        </div>
+        <div class="chart-popular__list">
+          <div class="chart-popular__list--item" style="--percent: 20%">20%</div>
+          <p>Da Nang</p>
+        </div>
+        <div class="chart-popular__list">
+          <div class="chart-popular__list--item" style="--percent: 88%">88%</div>
+          <p>Da Nang</p>
+        </div>
+        <div class="chart-popular__list">
+          <div class="chart-popular__list--item" style="--percent: 50%">50%</div>
+          <p>Da Nang</p>
+        </div>
+        <div class="chart-popular__list">
+          <div class="chart-popular__list--item" style="--percent: 68%">68%</div>
+          <p>Da Nang</p>
+        </div>
+        <div class="chart-popular__list">
+          <div class="chart-popular__list--item" style="--percent: 90%">90%</div>
+          <p>Da Nang</p>
+        </div>
+        <div class="chart-popular__list">
+          <div class="chart-popular__list--item" style="--percent: 20%">20%</div>
+          <p>Da Nang</p>
+        </div>
+        <div class="chart-popular__list">
+          <div class="chart-popular__list--item" style="--percent: 50%">50%</div>
+          <p>Da Nang</p>
+        </div>
+        <div class="chart-popular__list">
+          <div class="chart-popular__list--item" style="--percent: 60%">60%</div>
+          <p>Da Nang</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
