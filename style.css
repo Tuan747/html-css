@@ -86,14 +86,14 @@ header {
   z-index: 1;
   padding-top: 30px;
   border: 10px;
-  display: none;
+  /* display: none; */
 }
 .action__user--list ul {
   background-color: var(--bg-color-turquoise);
   border-radius: 2%;
 }
 .action__user--list ul li {
-  padding: 10px;
+  padding: 10px 27px;
 }
 .action__user--list ul li:hover  {
   border-left: 2px solid var(--border-color-white);
