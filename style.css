@@ -3,18 +3,18 @@
   /* text */
   --text-color-main: #000000;
   --text-color-white: #ffffff;
-  --text-color-turquoise: turquoise;
+  --text-color-turquoise: #40e0d0;
   --text-color-fading: rgba(255, 255, 255, 0.762);
 
   /* hover */
-  --hover-color-main: turquoise;
+  --hover-color-main: #40e0d0;
   --hover-color-fading: rgba(255, 255, 255, 0.598);
 
   /* box */
   --box-color-fading: rgba(64, 224, 208, 0.51);
 
   /* boder */
-  --border-color-main: turquoise;
+  --border-color-main: #40e0d0;
   --border-color-black: #000000;
   --border-color-white: #ffffff;
   --border-color-fading: rgba(64, 224, 208, 0.51);
@@ -22,9 +22,10 @@
   /* background */
   --bg-color-main: #ffffff;
   --bg-turquoise-fading: rgba(64, 224, 208, 0.51);
-  --bg-color-turquoise: turquoise;
+  --bg-color-turquoise: #40e0d0;
   --bg-color-red: #ff2f2f;
   --bg-color-navbar: rgb(0 0 0 / 51%);
+  --bg-white-fading: #ffffff8a;
 
   /* shadow */
   --boxShadow-color-main: rgba(0, 0, 0, 0.1);
@@ -59,6 +60,9 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
+  position: fixed;
+  background-color: var(--bg-white-fading);
+  box-shadow: 0 5px 25px var(--boxShadow-color-main);
 }
 .logo {
   text-decoration: none;
@@ -129,6 +133,7 @@ header {
 .banner {
   padding: 0 100px;
   width: 100%;
+  padding-top: 95px;
 }
 .banner__bg {
   position: relative;
@@ -423,7 +428,7 @@ footer {
     color: var(--text-color-white);
   }
   .banner {
-    padding: 0;
+    padding: 75px 0 0 0;
   }
   .banner__content h2 {
     font-size: var(--font-size-3xl);
@@ -464,7 +469,7 @@ footer {
     font-size: var(--font-size-xl);
   }
   .banner {
-    padding: 0;
+    padding: 95px 0 0 0;
   }
   .banner__content h2 {
     font-size: var(--font-size-4xl);
@@ -479,7 +484,4 @@ footer {
     margin-bottom: 50px;
     height: 50vh;
   }
-}
-/* pc || laptop*/
-@media (min-width: 1024px) {
 }
