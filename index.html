@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="DoAnhTuan" />
+  <meta name="description" content="Travel" />
+  <meta name="keywords" content="Travel" />
   <link rel="stylesheet" href="./style.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
   <title>HTML/CSS</title>
@@ -24,7 +27,6 @@
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-
       <ul class="group__action">
         <li class="group__action--user">
           <a href="#">Do Anh Tuan</a>
@@ -59,12 +61,12 @@
         <input type="text" id="location" placeholder="EX: VietNam" />
       </div>
       <div class="searchBox__inputBox">
-        <label>Check in</label>
-        <input type="date" />
+        <label for=check-in>Check in</label>
+        <input type="date" id="check-in" />
       </div>
       <div class="searchBox__inputBox">
-        <label>Check out</label>
-        <input type="date" />
+        <label for="check-out">Check out</label>
+        <input type="date" id="check-out" />
       </div>
       <div class="searchBox__inputBox">
         <label class="white">-</label>
@@ -76,16 +78,22 @@
   <section>
     <div class="suggest">
       <div class="suggest__location">
+        <div class="suggest__location--lable">Promotional tour</div>
         <img src="./img/Island__meeru.jpg" alt="Island__meeru" />
         <h4>Island in Meeru</h4>
+        <input type="submit" value="Booking" class="suggest__location--book" />
       </div>
       <div class="suggest__location">
+        <div class="suggest__location--lable">Promotional tour</div>
         <img src="./img/sea__danang.jpg" alt="sea__danang" />
         <h4>Sea in danang</h4>
+        <input type="submit" value="Booking" class="suggest__location--book" />
       </div>
       <div class="suggest__location">
+        <div class="suggest__location--lable">Promotional tour</div>
         <img src="./img/sea__indonesia.jpg" alt="sea__indonesia" />
         <h4>Sea in indonesia</h4>
+        <input type="submit" value="Booking" class="suggest__location--book" />
       </div>
     </div>
     <div class="chart">
@@ -93,47 +101,79 @@
       <div class="chart-popular">
         <div class="chart-popular__list">
           <div class="chart-popular__list--item" style="--percent: 10%">10%</div>
-          <p>Da Nang</p>
+          <p>Indonesia</p>
         </div>
         <div class="chart-popular__list">
           <div class="chart-popular__list--item" style="--percent: 90%">90%</div>
-          <p>Da Nang</p>
+          <p>Viet Nam</p>
         </div>
         <div class="chart-popular__list">
           <div class="chart-popular__list--item" style="--percent: 20%">20%</div>
-          <p>Da Nang</p>
+          <p>USA</p>
         </div>
         <div class="chart-popular__list">
           <div class="chart-popular__list--item" style="--percent: 88%">88%</div>
-          <p>Da Nang</p>
+          <p>Paris</p>
         </div>
         <div class="chart-popular__list">
           <div class="chart-popular__list--item" style="--percent: 50%">50%</div>
-          <p>Da Nang</p>
+          <p>Korean</p>
         </div>
         <div class="chart-popular__list">
           <div class="chart-popular__list--item" style="--percent: 68%">68%</div>
-          <p>Da Nang</p>
+          <p>China</p>
         </div>
         <div class="chart-popular__list">
           <div class="chart-popular__list--item" style="--percent: 90%">90%</div>
-          <p>Da Nang</p>
+          <p>Thai Lan</p>
         </div>
         <div class="chart-popular__list">
           <div class="chart-popular__list--item" style="--percent: 20%">20%</div>
-          <p>Da Nang</p>
+          <p>Cambodia</p>
         </div>
         <div class="chart-popular__list">
           <div class="chart-popular__list--item" style="--percent: 50%">50%</div>
-          <p>Da Nang</p>
+          <p>Canada</p>
         </div>
         <div class="chart-popular__list">
           <div class="chart-popular__list--item" style="--percent: 60%">60%</div>
-          <p>Da Nang</p>
+          <p>HongKong</p>
         </div>
       </div>
     </div>
   </section>
+  <!-- footer -->
+  <footer>
+    <div class="introduce">
+      We are an award-winning creative agency, dedicated to the best result in web design, promotion, business
+      consulting, and marketing.
+      <br /><br />© 2018 Waves. All Rights Reserved.
+    </div>
+    <div class="contacts">
+      <h3>Contacts</h3>
+      <div class="contacts__item">
+        <strong>Address:</strong>
+        <p>798 South Park Avenue, Jaipur, Raj</p>
+      </div>
+      <div class="contacts__item">
+        <strong>email:</strong>
+        <p>doanhtuan747@gmail.com</p>
+      </div>
+      <div class="contacts__item">
+        <strong>Phones:</strong>
+        <p>012365656</p>
+      </div>
+    </div>
+    <div class="link">
+      <h3>Link</h3>
+      <ul class="link__nav">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 
 </html>
